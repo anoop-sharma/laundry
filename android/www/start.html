@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="css/idangerous.swiper.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/loading.css">
+        <link rel="stylesheet" type="text/css" href="css/popup.css">
+        <title>StartScreen</title>
+    </head>
+    <body class="white">
+        <!--<div class="start-bg">
+            <img src="img/start_bg.jpg" />
+        </div>-->
+        <!--<div class="start-banner">
+            <img src="img/banner.jpg" />
+        </div>-->
+        <div class="start-content">
+            <div class="start-content-head">
+                <h3 class="width90">Free pickup and delivery at your doorstep anytime.</h3>
+                <p class="width90">Customer care available for 24*7</p>
+                <p class="width90 start-tag">We pickup, wash & deliver your clean clothes in 48 hours!</p>
+                <input id="pin" type="tel" maxlength="6" placeholder="Enter your area pin code" />
+                <a onclick="check_availability()" class="start-check">Check Availability</a>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="start-block">
+                            <h4 class="width90">Dry Cleaning & Laundry Made Simple</h4>
+                            <p class="width90">How it works</p>
+                            <img src="img/img1.jpg" />
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/hiw01-v2.png" />
+                                </div>
+                                <div class="start-col">
+                                    <h4>Book via our app or online</h4>
+                                    <p>You choose convenient pick-up & drop-off times.</p>
+                                </div>
+                            </div>
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/hiw02-v2.png" />
+                                </div>
+                                <div class="start-col">
+                                    <h4>Meet our Pickup Pilot</h4>
+                                    <p>We collect your dry cleaning & laundry from your doorstep.</p>
+                                </div>
+                            </div>
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/hiw03-v2.png" />
+                                </div>
+                                <div class="start-col">
+                                    <h4>Receive your fresh clothes</h4>
+                                    <p>We bring back your fresh clothes in 24 hours!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="start-divider"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="start-block">
+                            <h4 class="width90">Why Wash Mart?</h4>
+                            <p class="width90">Here are the reasons!</p>
+                            <img src="img/why-zipjet-uk.png" />
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/convenient-icon.png" />
+                                </div>
+                                <div class="start-col">
+                                    <h4>Convenient</h4>
+                                    <p>We’re a mobile, door-to-door dry cleaning and laundry service. With flexible 30-minute time slots, you choose a pick-up & drop-off time and we’ll handle the rest.</p>
+                                </div>
+                            </div>
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/professional-icon.png" />
+                                </div>
+                                <div class="start-col">
+                                    <h4>Professional</h4>
+                                    <p>We provide high quality dry cleaning, laundry, and ironing services from top-notch facilities, and take special requests so you can look and feel your best.</p>
+                                </div>
+                            </div>
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/fast-icon.png" />
+                                </div>
+                                <div class="start-col">
+                                    <h4>Fast</h4>
+                                    <p>Next day dry cleaning and laundry delivery. Your clean clothes will arrive 24h after your pick-up. By the time you’ve worn that last shirt, fresh ones will be on the way!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="start-divider"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="start-block">
+                            <h4 class="width90">We make you smile!</h4>
+                            <p class="width90">What our customers say:</p>
+                            <img src="img/testimonials-stacked-app-uk.png" />
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/testimonial01.png" />
+                                </div>
+                                <div class="start-col">
+                                    <p>“I could never find time for laundry, and let’s not even talk about ironing. With Wash Mart, laundry and ironing are off my to-do list for good. And so is dry cleaning.”</p>
+                                    <cite><span>Prakash</span>, Financial Analyst</cite>
+                                </div>
+                            </div>
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/testimonial02.png" />
+                                </div>
+                                <div class="start-col">
+                                    <p>“I can’t even remember the amount of expensive clothes I’ve ruined. With Wash Mart, my silk shirts, cashmere sweaters, and blouses are all in good hands, finally!”</p>
+                                    <cite><span>Renu Ahuja</span>, PR Manager</cite>
+                                </div>
+                            </div>
+                            <div class="start-row">
+                                <div class="start-col width20">
+                                    <img src="img/testimonial03.png" />
+                                </div>
+                                <div class="start-col">
+                                    <p>“My family goes through so many clothes a week, there’s always mountains of laundry to do. Now that I use Wash Mart, I spend Sundays with the kids rather than the washing machine.”</p>
+                                    <cite><span>Sangeeta</span>, House Wife</cite>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="start-divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination"></div>
+            <div class="start-footer">
+                <img src="img/logo.png"/>
+                <div class="start-medium-divider"></div>
+                <a href="tel:01204100999">Contact No. : 01204100999</a>
+                <a href="mailto:info@terasol.in"><i class="fa fa-envelope"></i> info@terasol.in</a>
+                <div class="start-medium-divider"></div>
+                <p>© 2016 Terasol Technologies. All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="header">
+            <img src="img/header_home.jpg" />
+        </div>
+        <a style="z-index:10000000" href="login.html" class="hidden-click"></a>
+        <div class="loading" id="loading">
+            <div class="loading-message">
+                <div class="loading-loader">
+                    <img src="img/loader.GIF" />
+                </div>
+                <div class="loading-text">Loading...</div>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-message">
+                <div class="popup-close">
+                    <img src="img/close.png" />
+                </div>
+                <div class="popup-text" id="popup-text">Message</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+        <script type="text/javascript">
+            var mySwiper = new Swiper('.swiper-container', {
+                pagination: '.pagination',
+                loop: true,
+                grabCursor: true,
+                paginationClickable: true,
+                autoplay: 10000
+            });
+        </script>
+    </body>
+</html>

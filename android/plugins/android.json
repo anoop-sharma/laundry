@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {},
+    "dependent_plugins": {
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.terasol.washmart"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.terasol.washmart"
+        }
+    }
+}

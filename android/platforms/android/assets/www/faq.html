@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>StartScreen</title>
+</head>
+<body>
+    <div class="page-header">
+        <div class="page-menu-button" onclick="sliding_menu('1')">
+            <img src="img/menu_button.png" />
+        </div>
+        <div class="page-name">FAQ</div>
+        <div class="page-cart invisible">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <p id="cartcount" onclick="window.location='cart.html'"></p>
+        </div>
+    </div>
+    <div id="nav-bar" class="nav-menu-wrapper nav-close">
+        <div class="nav-menu-back" onclick="sliding_menu('0')"></div>
+        <div class="nav-menu-bar">
+            <div class="nav-menu-header">
+                <img src="img/profile.png" />
+            </div>
+            <div class="nav-menu-element" onclick="window.location='home.html'">
+                <div class="nav-menu-icon">
+                    <img src="img/order_icon.png" />
+                </div>
+                <div class="nav-menu-text">Price</div>
+            </div>
+            <div class="nav-menu-element" onclick="window.location='history.html'">
+                <div class="nav-menu-icon">
+                    <img src="img/history_icon.png" />
+                </div>
+                <div class="nav-menu-text">Order History</div>
+            </div>
+            <div class="nav-menu-element" onclick="window.location='profile.html'">
+                <div class="nav-menu-icon">
+                    <img src="img/profile_icon.png" />
+                </div>
+                <div class="nav-menu-text">Profile & Address</div>
+            </div>
+            <div class="nav-menu-element" onclick="window.location='addlocation.html'">
+                <div class="nav-menu-icon">
+                    <img src="img/add_location_icon.png" />
+                </div>
+                <div class="nav-menu-text">Add Location</div>
+            </div>
+            <div class="nav-menu-element" onclick="window.location='package.html'">
+                <div class="nav-menu-icon">
+                    <img src="img/package_icon.png" />
+                </div>
+                <div class="nav-menu-text">Package</div>
+            </div>
+            <div class="nav-menu-element" onclick="window.location='cart.html'">
+                <div class="nav-menu-icon">
+                    <img src="img/checkout_icon.png" />
+                </div>
+                <div class="nav-menu-text">Proceed To Checkout</div>
+            </div>
+            <div class="nav-menu-element" onclick="window.location='about.html'">
+                <div class="nav-menu-icon">
+                    <img src="img/about_us_icon.png" />
+                </div>
+                <div class="nav-menu-text">About Us</div>
+            </div>
+            <div class="nav-menu-element">
+                <div class="nav-menu-icon">
+                    <img src="img/faq_icon.png" />
+                </div>
+                <div class="nav-menu-text">FAQ</div>
+            </div>
+            <div class="nav-menu-element" onclick="window.location='privacy.html'">
+                <div class="nav-menu-icon">
+                    <img src="img/privacy_icon.png" />
+                </div>
+                <div class="nav-menu-text">Privacy Policy</div>
+            </div>
+            <div class="nav-menu-element" onclick="rateus()">
+                <div class="nav-menu-icon">
+                    <img src="img/history_icon.png" />
+                </div>
+                <div class="nav-menu-text">Rate Us</div>
+            </div>
+            <div class="nav-menu-element" onclick="logout()">
+                <div class="nav-menu-icon">
+                    <img src="img/log_out_icon.png" />
+                </div>
+                <div class="nav-menu-text">Logout</div>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="clear2em"></div>
+        <div class="page-data">
+            <h5>FAQ</h5>
+            <p><b>1. Collection & Delivery</b></p>
+            <p><b>Do I get to keep the bag?</b></p>
+            <p>Of course! Use them for your next order. At Wash Mart we care about the environment and so we designed our branded bags to be perfect for transporting your laundry to and from our facilities.</p>
+            <p><b>How can I tell the weight of my laundry?</b></p>
+            <p>You don’t need to worry about the weight as there is a fixed price per laundry bag. Items for dry cleaning/shirts that should be washed and pressed will be billed on an itemised basis.</p>
+            <p><b>How do I request a pick up?</b></p>
+            <p>It’s easy - just download our app from the App Store or Google Play. The app will find your location, and then you will follow the on-screen instructions to schedule a pickup time within 60 seconds.</p>
+            <p><b>How should I sort my laundry before collection?</b></p>
+            <p>Put clothes for wash and fold in one bag and for dry cleaning/shirts for wash and iron in another.</p>
+            <p><b>I missed my slot! What do I do?</b></p>
+            <p>We are happy to pick up your clothing at a more convenient time. Just book your pickup again using our app.</p>
+            <p><b>Which items can be washed and which can be dry cleaned?</b></p>
+            <p>Read the care instructions on the clothing label inside the garment to be positive. A general rule of thumb is that dry cleaning is for synthetic materials and more refined items - e.g. suits, delicate dresses - and laundry is for natural materials - e.g. t-shirts, pants, socks.</p>
+            <p><b>2. Payment</b></p>
+            <p><b>How do I change my card details?</b></p>
+            <p>Just change your card details when ordering the next time.</p>
+            <p><b>Should I tip your pilots?</b></p>
+            <p>There’s no need - we take good care of our pilots. If you want to praise a pilot for their great customer service, we’d love to hear from you and we’ll reward them accordingly!</p>
+            <p><b>Why do you process payment after the order is complete?</b></p>
+            <p>We believe that no one should pay for something before the service is done.</p>
+            <p><b>What payment methods are available?</b></p>
+            <p>You can pay with credit card or via PayPal</p>
+            <p><b>3. Washing</b></p>
+            <p><b>Are my clothes insured whilst in your care?</b></p>
+            <p>You don’t have to worry - we take good care of your clothes. They are insured whilst being transported and they fall under the standard terms and conditions of our facility while being laundered.</p>
+            <p><b>Are special detergents available?</b></p>
+            <p>We offer unperfumed and hypoallergenic detergents - the pilot picking up your clothes will ask you about any special requirements.</p>
+            <p><b>Are there things that you will not wash?</b></p>
+            <p>Currently, we wash most items of clothing. If our laundry specialist discovers that it would not be sensible to wash a certain textile, we will contact you and agree on how to continue.</p>
+            <p><b>Can you get a stain out for me?</b></p>
+            <p>We can definitely try! Stains are best treated immediately, so your garment has a better chance of recovery. Turn your garment inside out and run cold water over the stain. This will greatly help the affected area, and in return make the stain easier to remove.</p>
+            <p><b>How do I know that my personal items of laundry are in safe hands?</b></p>
+            <p>The safety of personal items is in our hearts. Our Wash Mart pilots understand that and are hand selected professionals. If your personal items need to be washed a certain way, don’t worry - we’ll ask you for any special requests when we collect them.</p>
+            <p><b>How do you keep my clothes together?</b></p>
+            <p>At the washing facility we use a bag system to ensure your clothes stay together - don’t worry, we won’t get them mixed up.</p>
+            <p><b>My clothes need to be washed in a specific way - what can you do?</b></p>
+            <p>We know that your clothes are very personal items. Hence, our Pilot will ask you about the way your laundry should be processed at each pickup.</p>
+            <p><b>What do I do if you ruin my clothes?</b></p>
+            <p>In the unlikely event of this happening, please contact our customer care within 24 hours of receiving your items. We`ll deal with these situations on a personal level.</p>
+            <p><b>Where does the washing go?</b></p>
+            <p>Your order is taken to our professional facilities, which are continuously tested and monitored to ensure a high quality of service.</p>
+        </div>
+        <div class="clear2em"></div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

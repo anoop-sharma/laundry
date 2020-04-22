@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>StartScreen</title>
+    </head>
+    <body>
+        <div class="page-header">
+            <div class="page-menu-button" onclick="sliding_menu('1')">
+                <img src="img/menu_button.png" />
+            </div>
+            <div class="page-name">Privacy Policy</div>
+            <div class="page-cart invisible">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <p id="cartcount" onclick="window.location='cart.html'"></p>
+            </div>
+        </div>
+        <div id="nav-bar" class="nav-menu-wrapper nav-close">
+            <div class="nav-menu-back" onclick="sliding_menu('0')"></div>
+            <div class="nav-menu-bar">
+                <div class="nav-menu-header">
+                    <img src="img/profile.png" />
+                </div>
+                <div class="nav-menu-element" onclick="window.location='home.html'">
+                    <div class="nav-menu-icon">
+                        <img src="img/order_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Price</div>
+                </div>
+                <div class="nav-menu-element" onclick="window.location='history.html'">
+                    <div class="nav-menu-icon">
+                        <img src="img/history_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Order History</div>
+                </div>
+                <div class="nav-menu-element" onclick="window.location='profile.html'">
+                    <div class="nav-menu-icon">
+                        <img src="img/profile_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Profile & Address</div>
+                </div>
+                <div class="nav-menu-element" onclick="window.location='aWashocation.html'">
+                    <div class="nav-menu-icon">
+                        <img src="img/add_location_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Add Location</div>
+                </div>
+                <div class="nav-menu-element" onclick="window.location='package.html'">
+                    <div class="nav-menu-icon">
+                        <img src="img/package_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Package</div>
+                </div>
+                <div class="nav-menu-element" onclick="window.location='cart.html'">
+                    <div class="nav-menu-icon">
+                        <img src="img/checkout_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Proceed To Checkout</div>
+                </div>
+                <div class="nav-menu-element" onclick="window.location='about.html'">
+                    <div class="nav-menu-icon">
+                        <img src="img/about_us_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">About Us</div>
+                </div>
+                <div class="nav-menu-element" onclick="window.location='faq.html'">
+                    <div class="nav-menu-icon">
+                        <img src="img/faq_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">FAQ</div>
+                </div>
+                <div class="nav-menu-element">
+                    <div class="nav-menu-icon">
+                        <img src="img/privacy_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Privacy Policy</div>
+                </div>
+                <div class="nav-menu-element" onclick="rateus()">
+                    <div class="nav-menu-icon">
+                        <img src="img/history_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Rate Us</div>
+                </div>
+                <div class="nav-menu-element" onclick="logout()">
+                    <div class="nav-menu-icon">
+                        <img src="img/log_out_icon.png" />
+                    </div>
+                    <div class="nav-menu-text">Logout</div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="clear2em"></div>
+            <div class="page-data">
+                <h5>Privacy Policy</h5>
+                <p><b>1. Scope</b></p>
+                <p>This Privacy Policy describes your privacy rights regarding our collection, use, storage, sharing, and protection of your personal information. It applies to the website https://www.ddmart.co and all related sites, applications, services and tools where this policy is referenced, regardless of how you access or use them, including mobile devices. Please read it carefully before you use the App or order Wash Mart services from us.</p>
+                <p><b>2. What information do we collect?</b></p>
+                <p>If you buy services and register on the App or request further information from Wash Mart, we may collect the following personal data from you: your name, your email address, your billing address, your delivery address, your phone number(s), your order details, your payment details, your feedback for our services and information related to your query.</p>
+                <p>In addition, Wash Mart may automatically collect information about the website that you came from or are going to, your IP Address and Browser type.</p>
+                <p>Wash Mart also collects information about your mobile device, including a unique identifier and information about the parts of the App you visit, how you interact with it and the times you access the App. However, this information is aggregated and is not used to identify you.</p>
+                <p>Additionally Wash Mart may also also collect information about your location. Most mobile devices allow you to control or disable location services in the device’s settings menu. If you have questions about how to disable your device’s location services, we recommend you contact your mobile service carrier or the manufacturer of your particular device.</p>
+                <p><b>3. How will information about you be used and shared?</b></p>
+                <p>The information collected by Wash Mart allows us to: process your order, verify your identity and details of your payment method or credit card account, communicate with you, provide you with information relating to our new products and services (please see section 5 below for further details), administer the App and provide customer services, investigate any complaints about the App, personalise your experience of the App, meet legal, regulatory and compliance requirements.</p>
+                <p>Wash Mart may employ the services of third parties to help us in certain areas, such as collection, cleaning and return of goods at/from our cleaning facilities, delivery and hosting of the App, maintenance, identity checking. In some cases, these third parties may receive your information. However, Wash Mart will, at all times, control and be responsible for the use of your information.</p>
+                <p>To help constantly improve and tailor the service Wash Mart provides to you, we may use aggregated information so that we can administer and improve the App, analyse trends, gather broad demographic information and detect suspicious or fraudulent transactions.  Wash Mart may pass this information to third parties, but is not responsible for abuse of this data by third parties</p>
+                <p>If you provide a credit or debit card, Wash Mart may use third parties to check the validity of the sort code, account number and card number you submit in order to prevent fraud.</p>
+            </div>
+            <div class="clear2em"></div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

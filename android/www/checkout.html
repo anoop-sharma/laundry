@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/loading.css">
+        <link rel="stylesheet" type="text/css" href="css/popup.css">
+        <title>StartScreen</title>
+    </head>
+    <body onload="loadcheckout()">
+        <div class="page-header">
+            <div class="page-back" onclick="window.history.back()">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div class="page-name">&nbsp; Order &nbsp;</div>
+        </div>
+        <div class="page-content">
+            <div class="clear2em"></div>
+            <label>Pick Up location</label>            
+            <div class="page-select" id="location_list_box">
+                <select id="location_list">
+                    <option value="0"></option>
+                </select>
+            </div>
+            <a id="add_location_button" onclick="window.location = 'addlocation.html'">Add Location</a>
+            <label>Wash Type</label>
+            <div class="page-check marginleft10">
+                <div class="page-checkbox">
+                    <input id="wash" type="checkbox" name="type" />
+                </div>
+                <label>Wash & Iron</label>
+            </div>
+            <div class="page-check">
+                <div class="page-checkbox">
+                    <input id="dry" type="checkbox" name="type" />
+                </div>
+                <label>Dry Clean</label>
+            </div>
+            <label>Pickup Date</label>
+            <input readonly type="text" id="pickup" />
+            <label>Delivery Date</label>
+            <input readonly type="text" id="delivery"/>
+            <label>Pickup Time</label>
+            <div class="page-select">
+                <select id="pickuptime">
+                    <option value="10am-12pm">10am-12pm</option>
+                    <option value="4pm-6pm">4pm-6pm</option>
+                    <option value="6pm-8pm">6pm-8pm</option>
+                </select>
+            </div>
+            <label>Delivery Time</label>
+            <div class="page-select">
+                <select id="deliverytime">
+                    <option value="10am-12pm">10am-12pm</option>
+                    <option value="4pm-6pm">4pm-6pm</option>
+                    <option value="6pm-8pm">6pm-8pm</option>
+                </select>
+            </div>
+            <label>Payment Mode</label>
+            <div class="page-check marginleft10">
+                <div class="page-checkbox">
+                    <input id="cod" type="radio" name="pay" onclick="coupontoggle()" />
+                </div>
+                <label>Cash on Delivery</label>
+            </div>
+            <div class="page-check" style="visibility:collapse">
+                <div class="page-checkbox">
+                    <input id="online_pay" type="radio" name="pay" onclick="coupontoggle()" />
+                </div>
+                <label>Online Payment</label>
+            </div>
+            <div id="coupon_block">
+                <label>Apply Coupon</label>
+                <input type="text" maxlength="15" id="couponcode" />
+            </div>
+            <div class="clear2em"></div>
+            <a onclick="preplaceorder()">Submit</a>
+            <div class="clear2em"></div>
+        </div>
+        <div class="loading" id="loading">
+            <div class="loading-message">
+                <div class="loading-loader">
+                    <img src="img/loader.GIF" />
+                </div>
+                <div class="loading-text">Loading...</div>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-message">
+                <div class="popup-close">
+                    <img src="img/close.png" />
+                </div>
+                <div class="popup-text" id="popup-text">Message</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script>
+            $(window).load(function () {
+                var d = new Date();
+                var year = d.getFullYear();
+                d.setFullYear(year);
+
+                $("#pickup").datepicker({
+                    dateFormat: "dd-mm-yy",
+                    changeMonth: true,
+                    changeYear: true,
+                    maxDate: "+1M",
+                    minDate: d,
+                    //yearRange: '' + year + ':+1',
+                    defaultDate: d
+                });
+                $("#delivery").datepicker({
+                    dateFormat: "dd-mm-yy",
+                    changeMonth: true,
+                    changeYear: true,
+                    maxDate: "+1M",
+                    minDate: d,
+                    //yearRange: '' + year + ':+1',
+                    defaultDate: d
+                });
+            });
+            $("#pickup").change(function () {
+                $('#delivery').datepicker('option', 'minDate', $("#pickup").val());
+            });
+            // function coupontoggle() {
+            //     if (document.getElementById('online_pay').checked) {
+            //         document.getElementById('coupon_block').style.display = 'block';
+            //     } else {
+            //         document.getElementById('coupon_block').style.display = 'none';
+            //     }
+            // }
+        </script>
+    </body>
+</html>
